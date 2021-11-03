@@ -61,3 +61,11 @@
 .navbar-toggler.collapsed .toggler-icon {
     background-color: #777777;
 }
+
+.navbarKalle {
+    color: goldenrod;
+}
+
+.navbarKalle:hover {
+    color: red;
+}
