@@ -85,7 +85,7 @@
   display: grid;
   width: 100vw;
   height: 100vh;
-  grid-template-areas: 
+  grid-template-areas:
   "main main head"
   "main  main nav"
   "main  main section"
@@ -125,7 +125,7 @@
       display: grid;
       width: 100vw;
       height: 100vh;
-      grid-template-areas: 
+      grid-template-areas:
       "main"
       "main"
       "head"
@@ -183,3 +183,52 @@ button:hover {
   background-color: #fff;
   color: black;
 }
+
+/* Styling for the little box with image and text */
+
+.flex {
+  margin: 0;
+  display: flex;
+  border: 5px solid #333; /* Denna skall tas bort, ligger bara med så länge för att se hur stora boxarna blir */
+  margin-bottom: 2rem;
+}
+
+.flex div:first-child {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.flex div:last-child {
+  margin: 2rem;
+  flex: 2;
+}
+
+.flex h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: 400;
+}
+.flex p {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.flex p:last-of-type {
+  margin-bottom: 0;
+}
+
+.flex:first-of-type div:first-child {
+  background-image: url("https://images.unsplash.com/photo-1635983936376-154277d90673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80");
+}
+
+.flex:first-of-type div:first-child {
+  background-image: url("https://images.unsplash.com/photo-1591065411478-97722a82fe81?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=726&q=80");
+}
+
+@media all and (max-width: 600px) {
+  .flex div { flex: 1 !important; }
+}
+
+/* End of Styling for the little box with image and text */
