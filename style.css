@@ -80,63 +80,6 @@
 }
 
 
-.newsSection {
-  margin: 70px 0 0 0;
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  grid-template-areas:
-  "main main head"
-  "main  main nav"
-  "main  main section"
-  "foot  foot foot";
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.newsSection > header {
-  grid-area: head;
-  background-color: goldenrod;
-}
-
-.newsSection > nav {
-  grid-area: nav;
-  background-color: #ffa08c;
-}
-
-.newsSection > section {
-  grid-area: section;
-  background-color: green;
-}
-
-.newsSection > main {
-  grid-area: main;
-  background-color: #ffff64;
-}
-
-.newsSection > footer {
-  grid-area: foot;
-  background-color: #8cffa0;
-}
-
-@media (max-width: 700px) {
-  .newsSection {
-      margin: 70px 0 0 0;
-      display: grid;
-      width: 100vw;
-      height: 100vh;
-      grid-template-areas:
-      "main"
-      "main"
-      "head"
-      "nav"
-      "section"
-      "foot";
-      grid-template-rows: auto;
-      grid-template-columns: auto;
-    }
-  }
-
 /*Här börjar boxen*/
   .big {
   position: relative;
